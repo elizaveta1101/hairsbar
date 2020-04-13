@@ -1,0 +1,352 @@
+@import 'variables';
+
+.home {
+    width: 100%;
+    background: $bg center center no-repeat;
+    background-size: cover;
+}
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: relative;
+    @media #{$laptop, $desktop} {
+        height: 130px;
+        paddding: 10px 30px;
+        border-bottom: 1px solid $YELLOW;
+    }
+
+
+    &__contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-self: center;
+        width: 45%;
+        height: 100%;
+        @media #{$tablet--small} {
+            width: 55%;
+            .wrap {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;;
+            }
+        }
+        @media #{$tablet--big} {
+            width: 50%;
+        }
+        @media #{$laptop, $desktop} {
+            width: 65%;
+            margin: 0 20% 0 10%;
+        }
+
+    }
+
+    &__logo {
+        width: 15%;
+        height: 80%;
+        background: $logo center center no-repeat;
+        background-size: contain;
+    }
+
+    &__nav {
+        display: none;
+        transition: .5s;
+        right: -50%;
+
+        &--open {
+            width: 30px;
+            height: 25px;
+            border-top: 3px solid $YELLOW;
+            border-bottom: 3px solid $YELLOW;
+            align-self: center;
+            justify-self: center;
+            position: relative;
+            &::before {
+                content: '';
+                width: 100%;
+                height: 3px;
+                background: $GRADIENT;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:hover {
+                cursor: pointer;
+            }
+
+            @media #{$laptop, $desktop} {
+                display: none;
+            }
+        }
+        &--close {
+            background: transparent;
+            border: none;
+            align-self: flex-end;
+            width: 20px;
+            height: 20px;
+            margin: 0 20px 10px 0;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%) rotate(-45deg);
+                background-color: $YELLOW;
+            }
+            &::after {
+                content: '';
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%) rotate(45deg);
+                background-color: $YELLOW;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.header__contacts .wrap .contacts__social {
+    display: none;
+    @media #{$laptop} {
+        display: flex;
+    }
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    width: 45%;
+    height: 100vh;
+    background-color: black;
+    padding: 25px 0;
+
+    &__item {
+        display: block;
+        padding: 15px 30px;
+        color: $YELLOW;
+        transition: .3s;
+        &:hover {
+            background: $GRADIENT;
+            color: $BLACK;
+        }
+    }
+
+    @media #{$tablet--big} {
+        width: 20%;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+        width: 85%;
+        height: 70%;
+        content: '';
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        background: url(../img/bg2.png) 50% no-repeat;
+        background-size: cover;
+        z-index: -1;
+        @media #{$tablet--small, $tablet--big, $laptop, $desktop} {
+            height: 55%;
+            top: 15%;
+        }
+        @media #{$tablet--big, $laptop, $desktop} {
+            height: 40%;
+        }
+        @media #{$laptop, $desktop} {
+            height: 650px;
+            top: 200px;
+            left: 10%;
+            width: 90%;
+        
+        }
+    }
+
+    &__services {
+        display: flex;
+        flex-direction: column;
+
+        @media #{$tablet--small, $tablet--big, $laptop, $desktop} {
+            flex-direction: row;
+        }
+
+        @media #{$tablet--small} {
+            justify-content: space-evenly;
+            width: 100%;        
+        }
+        @media #{ $tablet--big} {
+            width: 70%;
+        }
+
+        @media #{$laptop, $desktop} {
+            width: 55%;
+            height: 300px;
+            justify-content: space-between;
+        }
+        @media #{$desktop} {
+            width: 40%;
+        }
+    }
+
+    &__form {
+        margin: 30px 0;
+        max-width: 100%;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 25px;
+        border-radius: 15px;
+        border: 1px solid $YELLOW;
+
+        @media #{$laptop, $desktop} {
+            width: 380px;
+            height: 370px;
+            padding: 25px 30px;
+        }
+
+        .form__name {
+            margin-bottom: 15px;
+            @media #{$laptop, $desktop} {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .form__control {
+            border: 1px solid $YELLOW;
+            border-radius: 5px;
+            padding: 5px;
+            max-width: 100%;
+            color: $BLACK;
+            font-size: 10px;
+            &::placeholder {
+                font-size: 10px;
+                line-height: 10px;
+                color: $BLACK;
+            }
+            @media #{$laptop, $desktop} {
+                max-width: 97%;
+                padding: 6px;
+                font-size: 15px;
+                &::placeholder {
+                    font-size: 15px;
+                    line-height: 15px;
+                }
+            }
+        }
+
+        .form__btn {
+            padding: 5px 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: $YELLOW;
+            color: $BLACK;
+
+            &:hover {
+                cursor:pointer;
+                background: $GRADIENT;
+            }
+        }
+
+        .form-group {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &+.form-group {  
+                margin-top: 15px;
+                @media #{$laptop, $desktop} {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .form-group, .form__control {
+            @media #{$laptop, $desktop} {
+                width: 100%;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+        @media #{$laptop, $desktop} {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .nav__item {
+            color: $WHITE;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+.service {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    &__icon {
+        width: 20px;
+        margin-right: 10px;
+        @media #{$tablet--big } {
+            width: 30px;
+        }
+        @media #{$laptop} {
+            width: 50px;
+        }
+
+    }
+
+    @media #{$tablet--small, $tablet--big} {
+        justify-content: start;
+    }
+}
+
+.overlay {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.6);
+    }
+}

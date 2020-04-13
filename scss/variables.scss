@@ -1,0 +1,57 @@
+/*-------------COLORS-------------*/
+$YELLOW: #E9CA77;
+$DARK-YELLOW: rgba(233, 202, 119, 0.58);
+$WHITE: #FFF;
+$BLACK: #000;
+$GRADIENT: linear-gradient(0.3turn, $YELLOW, $WHITE, $YELLOW);
+
+/*-------------FONTS--------------*/
+
+@font-face {
+    font-family: Cambria;
+    src: url(../fonts/cambria.ttc);
+    font-style: normal;
+    font-weight: normal;
+}
+
+$main-font: Cambria;
+    
+/*-------------RESPONSIVE---------*/
+
+$mobile: "(min-width: 576px)";
+$tablet--small: "(min-width: 768px)";
+$tablet--big: "(min-width: 992px)";
+$laptop: "(min-width: 1200px)";
+$desktop: "(min-width: 1600px)";
+
+
+/*----------PATH_to_IMG-------------*/
+
+$bg: url(../img/bg.png);
+$bg2: url(../img/bg2.png);
+$bg_H: url(../img/bg_H.png);
+$logo: url(../img/logo.png);
+$inst: url(../img/inst.svg);
+$phone: url(../img/phone.svg);
+$place: url(../img/placeholder.svg);
+$star: url(../img/star.svg);
+/*-----icons---*/
+$icon1: url(../img/icons/1.svg);
+$icon2: url(../img/icons/2.svg);
+$icon3: url(../img/icons/3.svg);
+$icon4: url(../img/icons/4.svg);
+$icon5: url(../img/icons/5.svg);
+$icon6: url(../img/icons/6.svg);
+/*--------photos-----*/
+$photo1: url(../img/gallery/1.png);
+$photo2: url(../img/gallery/2.png);
+$photo3: url(../img/gallery/3.png);
+$photo4: url(../img/gallery/4.png);
+$photo5: url(../img/gallery/5.png);
+$photo6: url(../img/gallery/6.png);
+$photo7: url(../img/gallery/7.png);
+$photo8: url(../img/gallery/8.png);
+/*-------cards_about-----*/
+$card_left: url(../img/about/left.png);
+$card_right: url(../img/about/right.png);
+$card_bot: url(../img/about/bot.png);

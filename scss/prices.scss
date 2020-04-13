@@ -1,0 +1,47 @@
+@import 'variables';
+
+.price {
+    &__subtitle {
+        text-align: center;
+    }
+    &__list {
+        width: 80%;
+        ul {
+            li {
+                list-style-type: none;
+                &:before {
+                    content: $star;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        @media #{$tablet--small} {
+            .service {
+                justify-content: center;
+            }
+        }
+        @media #{$laptop} {
+            width: 30%;
+        }
+        
+    }
+}
+.container--small .wrap {
+    width: 100%;
+    margin-top: 30px;
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        @media #{$laptop} {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            margin-top: 25px;
+        }
+    }
+    
+}
+

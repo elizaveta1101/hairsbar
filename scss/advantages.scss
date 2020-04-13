@@ -1,0 +1,29 @@
+@import 'variables';
+
+.list__item  {
+    list-style-type: none; /* Скрываем маркеры, отображаемые по умолчанию */
+    align-items: baseline;
+    &+li {
+        margin-top: 10px;
+    }
+    &:before {
+        content: ''; /* Маркер */
+        display: block;
+        min-width: 6px;
+        min-height: 6px;
+        background-color: $YELLOW;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+}
+
+@media #{$laptop} {
+    .advantages {
+        .container--small {
+            max-width: 50%;
+        }
+        &__list {
+            padding-left: 50px;
+        }
+    }
+}

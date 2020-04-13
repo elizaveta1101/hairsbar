@@ -1,0 +1,113 @@
+@import 'variables';
+
+.about {
+    &__text {
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    @media #{$tablet--small} {
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                width: 400px;
+                height: 300px;
+                position: absolute;
+                top: 50%;
+                left: 55%;
+                transform: translateX(-60%) translateY(-50%) rotate(-15deg);
+                background-color: $YELLOW;
+                z-index: -1;
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 400px;
+                height: 300px;
+                position: absolute;
+                top: 60%;
+                left: 60%;
+                transform: translateX(-50%) translateY(-60%) rotate(-15deg);
+                background-color: $DARK-YELLOW;
+                z-index:-1;
+            }
+            .wrapper {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+        }
+        .card {
+            width: 190px;
+            height: 190px;
+            border-radius: 20px;
+        }
+        .card:first-child {
+            margin-right: 15px;
+        }
+    }
+    @media #{$tablet--big} {
+        &__cards {
+            &::before, &::after {
+                width: 370px;
+                height: 270px;
+            }
+        }
+    }
+    @media #{$laptop} {
+        width: 80%;
+        margin: 0 auto;
+        &__cards {
+            width: 45%;
+        }
+        .container {
+            max-width: 100%;
+            .wrapper {
+                width: 100%;
+            }
+        }
+
+        &__text {
+            text-align: left;
+            width: 50%;
+        }
+        
+    }
+    @media #{$desktop} {
+        .container {
+            max-width: 80%;
+        }
+        
+    }
+}
+.card {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.card:nth-child(1) {
+    background: $card_left center center no-repeat;
+}
+.card:nth-child(2) {
+    background: $card_right center center no-repeat;
+}
+.card:nth-child(3) {
+    background: $card_bot center center no-repeat;
+}
+
+

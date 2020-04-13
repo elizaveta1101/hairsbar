@@ -1,0 +1,247 @@
+@import 'variables';
+@import 'home';
+@import 'about';
+@import 'prices';
+@import 'instagram';
+@import 'advantages';
+@import 'footer';
+
+* {
+    color: $WHITE;
+    font-family: $main-font;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container--small {
+    max-width: 80%;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$tablet--small} {
+        max-width: 50%;
+        .wrap {
+            width: 100%;
+        }
+    }
+    @media #{$laptop} {
+        max-width: 80%;
+    }
+    @media #{$desktop} {
+        max-width: 70%;
+    }
+}
+
+.title {
+    font-size: 21px;
+    @media #{$tablet--small} {
+        font-size: 23px;
+    }
+    @media #{$tablet--big} {
+        font-size: 30px;
+    }
+    @media #{$laptop} {
+        font-size: 38px;
+    }
+    @media #{$desktop} {
+        font-size: 48px;
+    }
+}
+
+.subtitle {
+    font-size: 14px;
+    @media #{$tablet--small} {
+        font-size: 16px;
+    }
+    @media #{$tablet--big} {    
+        font-size: 18px;
+    }
+    @media #{$laptop} {
+        font-size: 22px;
+    }
+    @media #{$desktop} {
+        font-size: 24px;
+    }
+}
+
+.text {
+    font-size: 13px;
+    line-height: 15px;
+    @media #{$tablet--small} {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    @media #{$tablet--big} {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    @media #{$laptop, $desktop} {
+        font-size: 18px;
+        line-height: 21px;
+    }    
+}
+
+.price-item {
+    font-size: 12px;
+    line-height: 14px;
+
+    @media #{$tablet--big} {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    @media #{$laptop, $desktop} {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.heading {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: center;
+
+    @media #{$tablet--small} {
+        font-size: 22px;
+        line-height: 25px;
+    }
+    @media #{$tablet--big} {
+        font-size: 26px;
+        line-height: 28px;    
+    }
+    @media #{$laptop} {
+        font-size: 30px;
+        line-height: 33px;    
+    }
+    @media #{$desktop} {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$tablet--small} {
+        width: 65%;
+    }
+    @media #{$laptop, $desktop} {
+        flex-direction: row;
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    &--row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+body {
+    background-color: $BLACK;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+ul {
+    padding: 0;
+}
+
+.title--bg {
+    display: block;
+    width: 100%;
+    background: url(../img/bg_H.png) center center no-repeat;
+    background-size: contain;
+    text-align: center;
+    height: 35px;
+}
+
+.contacts {
+    &__social, &__nav {
+        display: none;
+        @media #{$laptop, $desktop} {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__phone, &__place, &__social {
+        display: flex;
+        max-width: 170px;
+        align-items: center;
+        font-size: 8px;
+        line-height: 11px;
+        img {
+            margin-right: 10px;
+        }
+
+        @media #{$tablet--small} {
+            max-width: 200px;
+            font-size: 13px;
+            line-height: 15px;
+        }
+        @media #{$tablet--big, $laptop, $desktop} {
+            max-width: 230px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        @media #{$laptop, $desktop} {
+            max-width: 245px;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+
+    &__social, &__phone, &__place {
+        img {
+            width: 15px;
+
+            @media #{$tablet--small} {
+                width: 20px;
+                margin-right: 15px;
+            }
+            @media #{$laptop } {
+                width: 25px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+#map {
+    height:100%;
+    width: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    color: $BLACK;
+}

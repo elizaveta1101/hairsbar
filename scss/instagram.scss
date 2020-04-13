@@ -1,0 +1,102 @@
+@import 'variables';
+
+.instagram {
+    .title--bg {
+        height: 50px;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__photos {
+        width: 100%;
+        .wrapper+.wrapper {
+            margin-top: 10px;
+        }
+    }
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    &+.photo {
+        margin-top: 10px;
+    }
+}
+
+.photo1 {
+    background: $photo1 center center no-repeat;
+    background-size: cover;
+}
+.photo2 {
+    background: $photo2 center center no-repeat;
+    background-size: cover;
+}
+.photo3 {
+    background: $photo3 center center no-repeat;
+    background-size: cover;
+}
+.photo4 {
+    background: $photo4 center center no-repeat;
+    background-size: cover;
+}
+.photo5 {
+    background: $photo5 center center no-repeat;
+    background-size: cover;
+}
+.photo6 {
+    background: $photo6 center center no-repeat;
+    background-size: cover;
+}
+.photo7 {
+    background: $photo7 center center no-repeat;
+    background-size: cover;
+}
+.photo8 {
+    background: $photo8 center center no-repeat;
+    background-size: cover;
+}
+
+@media #{$tablet--small} {
+    .photo {
+        width: 250px;
+        height: 250px;
+        &+.photo {
+            margin: 0;
+        }
+        &:nth-child(2n) {
+            margin-left: 10px;
+        }
+        &:nth-child(2n), &:nth-child(2n+1) {
+            margin-top: 10px;
+        }
+    }
+
+    .instagram__photos .wrapper {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media #{$tablet--big} {
+    .photo {
+        &:nth-child(4) {
+            display: none;
+        }
+        &:nth-child(3) {
+            margin-left: 10px;
+        }
+    }
+}
+@media #{$laptop} {
+    .photo {
+        width: 200px;
+        height: 200px;
+        &:nth-child(4) {
+            display: block;
+        }
+        &:nth-child(2n), &:nth-child(2n+1) {
+            margin-top: 0px;
+        }
+    }
+}

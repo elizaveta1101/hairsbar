@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Hairs Bar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+    <div class="home">
+        <header class="header">
+            <div class="header__logo"></div>
+            <div class="header__contacts">
+                <div class="wrap">
+                    <div class="contacts__phone">
+                        <img src="./img/phone.svg" alt="">
+                        <a href="tel:89268884911">+7 (926) 888-49-11</a>
+                    </div>
+                    <div class="contacts__place">
+                        <img src="./img/placeholder.svg" alt="">
+                        <a href="#">г. Зеленоград, Георгиевский пр-т, 37к2</a>
+                    </div>
+                    <div href="#" class="contacts__social">
+                        <img src="./img/inst.svg" alt=""> 
+                        <a href="#">hairsbar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__nav--open"></div>
+            <nav class="header__nav">
+                <button class="header__nav--close"></button>
+                <a href="#" class="nav__item text">О салоне</a>
+                <a href="#" class="nav__item text">Наши цены</a>
+                <a href="#" class="nav__item text">Преимущества</a>
+                <a href="#" class="nav__item text">Наш Instagram</a>
+                <a href="#" class="nav__item text">Контакты</a>
+            </nav>
+        </header>
+        <div class="main">
+            <nav class="main__nav">
+                <a href="#" class="nav__item text">О салоне</a>
+                <a href="#" class="nav__item text">Наши цены</a>
+                <a href="#" class="nav__item text">Преимущества</a>
+                <a href="#" class="nav__item text">Наш Instagram</a>
+                <a href="#" class="nav__item text">Контакты</a>
+            </nav>
+            <h1 class="main__title title">Студия красоты</h1>
+            <h3 class="main__subtitle subtitle">Все для волос и тела</h3>
+            <div class="wrapper">
+                <div class="main__services">
+                    <div class="wrap">
+                        <div class="service">
+                            <img src="./img/icons/1.svg" max-width="30px" alt="" class="service__icon">
+                            <a href="" class="service__name text">Стрижки / Окрашивание</a>
+                        </div>
+                        <div class="service">
+                            <img src="./img/icons/2.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Маникюр / Педикюр</a>
+                        </div>
+                        <div class="service">
+                            <img src="./img/icons/3.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Наращивание ресниц</a>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="service">
+                            <img src="./img/icons/4.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Оформление бровей</a>
+                        </div>
+                        <div class="service">
+                            <img src="./img/icons/5.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Массаж / Шугаринг</a>
+                        </div>
+                        <div class="service">
+                            <img src="./img/icons/6.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Косметология</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__form ">
+                    <div class="form__name">Записаться на услуги</div>
+                    <div class="form-group">
+                        <input class="form__control" type="text" placeholder="Имя ..." required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form__control phone" type="tel" placeholder="Телефон ..." required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form__control" placeholder="Интересует наращивание ресниц ..." rows="3" cols="27" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form__btn text">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="container">
+            <h2 class="about__title heading title--bg">О студии HAIRS BAR</h2>
+            <div class="wrapper">
+                <div class="about__text text">Приглашаем вас в студию Красоты “Hairs bar”. Мы рады представить вам лучшие услуги из арсенала индустрии красоты, по самым «вкусным» ценам. В нашей уютной студии красоты вы можете воспользоваться услугами мастеров ногтевого сервиса, услугами косметолога, парикмахерскими услугами, услугами lash-makera, порадовать себя массажем.<br><br>Мастера “Hairs bar” сделают всё возможное, чтобы каждый гость погрузился в атмосферу комфорта и спокойствия, отдохнул от безумного ритма современного мегаполиса и получил массу позитивной энергии.<br><br>Приходите, мы всегда рады вас видеть!<br><br>“Hairs bar” - максимально натуральный и естественный результат!</div>
+                <div class="about__cards">
+                    <div class="wrapper">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                    <div class="card"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="prices">
+        <div class="container--small">
+            <h2 class="price__title heading">Наши цены</h2>
+            <div class="price__subtitle text">Полный перечень услуг и цены узнавате у администратора по телефону.</div>
+            <div class="wrap">
+                <div class="row">
+                    <div class="price__list">
+                        <div class="service">
+                            <img src="./img/icons/1.svg" max-width="30px" alt="" class="service__icon">
+                            <a href="" class="service__name text">Стрижки / Окрашивание</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Стрижка женская</div>
+                                <div class="list__cost price-item">от 600 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Стрижка мужская</div>
+                                <div class="list__cost price-item">от 200 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Стрижка детская</div>
+                                <div class="list__cost price-item">от 400 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Стайлинг</div>
+                                <div class="list__cost price-item">от 500 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Окрашивание</div>
+                                <div class="list__cost price-item">от 1100 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Мелирование</div>
+                                <div class="list__cost price-item">от 1200 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Тонирование</div>
+                                <div class="list__cost price-item">от 1000 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Осветвление</div>
+                                <div class="list__cost price-item">от 1200 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Колорирование</div>
+                                <div class="list__cost price-item">от 2200 руб.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price__list">
+                        <div class="service">
+                            <img src="./img/icons/2.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Маникюр / Педикюр</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Маникюр</div>
+                                <div class="list__cost price-item">от 500 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Укрепление ногтей</div>
+                                <div class="list__cost price-item">от 1500 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Наращивание ногтей</div>
+                                <div class="list__cost price-item">от 2300 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Коррекция ногтей</div>
+                                <div class="list__cost price-item">от 1500 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Маникюр мужской</div>
+                                <div class="list__cost price-item">от 700 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Педикюр</div>
+                                <div class="list__cost price-item">от 1000 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Педикюр мужской</div>
+                                <div class="list__cost price-item">от 1200 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Парафинотерапия</div>
+                                <div class="list__cost price-item">от 400 руб.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price__list">
+                        <div class="service">
+                            <img src="./img/icons/3.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Наращивание ресниц</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Ламинирование</div>
+                                <div class="list__cost price-item">от 2000 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Окрашивание</div>
+                                <div class="list__cost price-item">от 400 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Наращивание классика</div>
+                                <div class="list__cost price-item">2000 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Наращивание 1.5D</div>
+                                <div class="list__cost price-item">2200 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Наращивание 2D</div>
+                                <div class="list__cost price-item">2500 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Наращивание 3D</div>
+                                <div class="list__cost price-item">2800 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Снятие</div>
+                                <div class="list__cost price-item">300 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Коррекция</div>
+                                <div class="list__cost price-item">от 1100 руб.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="price__list">
+                        <div class="service">
+                            <img src="./img/icons/4.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Оформление бровей</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Архитектура</div>
+                                <div class="list__cost price-item">1100 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Коррекция</div>
+                                <div class="list__cost price-item">400 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Форма</div>
+                                <div class="list__cost price-item">200 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Окрашивание хна</div>
+                                <div class="list__cost price-item">500 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Окрашивание краска </div>
+                                <div class="list__cost price-item">400 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Ламинирование</div>
+                                <div class="list__cost price-item">2000 руб.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price__list">
+                        <div class="service">
+                            <img src="./img/icons/5.svg" alt="" class="service__icon">
+                            <a href="" class="service__name text">Массаж / Шугаринг</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Шугаринг бикини</div>
+                                <div class="list__cost price-item">от 800 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Шугаринг ноги</div>
+                                <div class="list__cost price-item">от 1000 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Шугаринг руки</div>
+                                <div class="list__cost price-item">от 700 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Шугаринг подмышки</div>
+                                <div class="list__cost price-item">350 руб.</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wrap--row">
+                                <div class="list__name price-item">Шугаринг усики</div>
+                                <div class="list__cost price-item">350 руб.</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="instagram">
+        <div class="container">
+            <h2 class="instagram__title heading title--bg">Подписывайтесь на наш Instagram</h2>
+            <div class="instagram__photos">
+                <div class="wrapper">
+                    <div class="photo photo1"></div>
+                    <div class="photo photo2"></div>
+                    <div class="photo photo3"></div>
+                    <div class="photo photo4"></div>
+                </div>
+                <div class="wrapper">
+                    <div class="photo photo5"></div>
+                    <div class="photo photo6"></div>
+                    <div class="photo photo7"></div>
+                    <div class="photo photo8"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="container--small">
+            <h2 class="advantages__title heading">Преимущества нашей работы</h2>
+            <ul class="advantages__list">
+                <li class="list__item text">Мастера с достойным опытом работы, влюблённые в своё дело. </li>
+                <li class="list__item text">Косметика, зарекомендовавшая себя на мировом рынке.</li>
+                <li class="list__item text">Уютная атмосфера в каждом зале.</li>
+                <li class="list__item text">Более 100 наименований эстетических услуг. </li>
+                <li class="list__item text">Постоянное совершенствование знаний и навыков мастеров.</li>
+                <li class="list__item text">Мы только в начале пути, но очень постараемся стать для вас надежным и верным другом.</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contacts">
+                <h3 class="footer__title heading">Контакты</h3>
+                <div class="wrap">
+                    <div class="contacts__phone">
+                        <img src="./img/phone.svg" alt="">
+                        <a href="tel:89268884911" >+7 (926) 888-49-11</a>
+                    </div>
+                    <div class="contacts__place">
+                        <img src="./img/placeholder.svg" alt="">
+                        <a href="#" >г. Зеленоград, Георгиевский пр-т, 37к2</a>
+                    </div>
+                    <div href="#" class="contacts__social">
+                        <img src="./img/inst.svg" alt=""> 
+                        <a href="#" >hairsbar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__map" id="map">
+
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7cc3c5469dd25529e04839c2041c50567aca083cf373ba5ef72306696222b544&amp;source=constructor" width="100%" height="400" frameborder="0" apikey="1e34c241-6c6e-48f0-96ba-60b07b335108"></iframe> -->
+            
+        </div>
+    </footer>
+    <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7cc3c5469dd25529e04839c2041c50567aca083cf373ba5ef72306696222b544&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true" apikey="1e34c241-6c6e-48f0-96ba-60b07b335108"></script> -->
+    <script src="./js/inputmask.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>

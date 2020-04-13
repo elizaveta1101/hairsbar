@@ -1,0 +1,84 @@
+@import 'variables';
+
+.footer {
+    // background: url(../img/map.png) center center no-repeat;
+    // background-size: cover;
+    position: relative;
+    .container {
+        margin-bottom: 0;
+    }
+
+    &__contacts {
+        width: 45%;
+        align-self: flex-end;
+        font-size: 8px;
+        line-height: 11px;
+        background-color: rgba(0,0,0,.7);
+        padding: 0 10px 20px;
+        z-index: 3;
+
+        .wrap {
+            align-items: flex-start;
+        }
+
+        .contacts {
+            &__social, &__phone, &__place {
+                img {
+                    width: 10px;
+                    @media #{$tablet--small} {
+                        width: 20px;
+                        margin-right: 15px;
+                    }
+                    @media #{$laptop } {
+                        width: 25px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    @media #{$tablet--small} {
+        .container {
+            height: 200px;
+        }
+        &__contacts {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .wrap {
+                height: 50%;
+                justify-content: space-around;
+            }
+        }
+    }
+    @media #{$laptop} {
+        .container {
+            height: 450px;
+        }
+        &__contacts {
+            height: 100%;
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .wrap {
+                height: 100%;
+                justify-content: space-around;
+            }
+        }
+    }
+    @media #{$laptop} {
+        margin-top: 60px;
+        &__contacts {
+            width: 35%;
+        }
+    }
+}
+
+.footer__contacts .wrap .contacts__social {
+    display: flex;
+}
+
